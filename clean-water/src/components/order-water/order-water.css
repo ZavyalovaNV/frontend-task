@@ -3,16 +3,17 @@
     width: 96px;
     background: url("./img/bg.png") no-repeat;
     background-color: #fff;
-    position: relative;
     border-radius: 8px;
 }
 
-.water-bottle .bottle-volume {
-    position: absolute;
-    top: 12px;
-    left: 12px;
+.water-bottle-wrapper {
+    padding: 12px;
+    position: relative;
+}
 
-    font-family: Cera Pro;
+.water-bottle .bottle-volume {
+    margin-bottom: 2px;
+
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -22,11 +23,6 @@
 }
 
 .water-bottle .bottle-price {
-    position: absolute;
-    top: 103px;
-    left: 12px;
-
-    font-family: Cera Pro;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -36,16 +32,14 @@
 }
 
 .water-bottle .bottle-count {
-    position: absolute;
-    top: 37px;
-    left: 12px;
+    margin-bottom: 53px;
 
     font-size: 10px;
     line-height: 13px;
     color: #BABDC2;
 }
 
-.water-bottle::after {
+.water-bottle-wrapper::after {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -58,6 +52,43 @@
     border-radius: 50%;
 }
 
-.water-bottle.active::after {
+.active .water-bottle-wrapper::after {
     background: #FFC369;
+}
+
+.count-menu {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    direction: row;
+    justify-content: center;
+}
+
+.count-menu span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #455273;
+}
+
+.count-menu button {
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.count-menu button:hover {
+    cursor: pointer;
+}
+
+.minus {
+    background: url("../order-water/img/minus-circle.svg") no-repeat;    
+}
+
+.plus {
+    background: url("../order-water/img/plus-circle.svg") no-repeat;    
 }
