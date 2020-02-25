@@ -1,0 +1,22 @@
+.order-form {
+    background-color: #F5F8FF;
+    border-radius: 6px;
+
+    display: flex;
+}
+
+.order-form input {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 8px 0;
+    margin-right: 80px;
+    width: 328px;
+
+    color: #455273;
+    border: none;
+    border-bottom: solid 1px #D5DDE0;
+    border-radius: 6px;
+}
