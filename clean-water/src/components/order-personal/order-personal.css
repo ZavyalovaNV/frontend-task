@@ -1,0 +1,80 @@
+.order-form-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 40px 0 30px 0;
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"],
+.order-form input[type="email"] {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    width: 328px;
+
+    color: #455273;
+    border: none;
+    border-bottom: 1px solid #D5DDE0;
+    background-color: #F5F8FF;
+}
+.order-form input:last-child {
+    margin-bottom: 0;
+}
+
+.order-form-side {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.order-form-side:last-child {
+    margin-right: 0px;
+}
+
+.order-form input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden; 
+    z-index: -1;
+}
+
+.order-form label {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #455273;
+    position: relative;
+    padding-left: 26px;
+}
+
+.order-form input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: #418DE8;
+    border-radius: 3px;
+}
+
+.order-form input[type="checkbox"]:checked + label::after {
+    content: url("../order-personal/img/checkbox.svg");
+    position: absolute;
+    top: -1px;
+    left: 4px;
+    width: 8px;
+    height: 6px;
+}
+
+.order-form a {
+    color: rgb(110, 167, 237);
+    text-decoration: none;
+}

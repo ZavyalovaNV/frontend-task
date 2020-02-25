@@ -28,5 +28,9 @@
 body {
     font-family: 'Cera Pro';
     background-color: #E5E5E5;
+}
+
+main {
     display: flex;
+    background-color: #DBE2F3;
 }

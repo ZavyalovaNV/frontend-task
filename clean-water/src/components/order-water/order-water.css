@@ -1,0 +1,63 @@
+.water-bottle {
+    height: 130px;
+    width: 96px;
+    background: url("./img/bg.png") no-repeat;
+    background-color: #fff;
+    position: relative;
+    border-radius: 8px;
+}
+
+.water-bottle .bottle-volume {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #455273;
+}
+
+.water-bottle .bottle-price {
+    position: absolute;
+    top: 103px;
+    left: 12px;
+
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+}
+
+.water-bottle .bottle-count {
+    position: absolute;
+    top: 37px;
+    left: 12px;
+
+    font-size: 10px;
+    line-height: 13px;
+    color: #BABDC2;
+}
+
+.water-bottle::after {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    content: "";
+
+    width: 8px;
+    height: 8px;
+
+    background: #D5DDE0;
+    border-radius: 50%;
+}
+
+.water-bottle.active::after {
+    background: #FFC369;
+}
